@@ -11,11 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function renderJobs(jobs = []) {
-    resultsEl.innerHTML = ''; // clear placeholder cards
+    resultsEl.innerHTML = ''; // clear old content
     if (!Array.isArray(jobs) || jobs.length === 0) {
       resultsEl.innerHTML = '<p style="color:#6b7280">No jobs found.</p>';
       return;
     }
+
     const frag = document.createDocumentFragment();
     jobs.forEach(job => {
       const card = document.createElement('article');
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ${job.location ?? ''}${job.type ? ' • ' + job.type : ''}${job.salary ? ' • ' + job.salary : ''}
         </p>
         <p>${job.summary ?? ''}</p>
-        ${job.url ? `<a class="btn-outline" href="${job.url}" target="_blank" rel="noopener">View job</a>` : ''}
+        <button class="btn-outline">View job</button>
       `;
       frag.appendChild(card);
     });
@@ -49,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();     // { jobs: [...] }
+      const data = await res.json(); // { jobs: [...] }
       renderJobs(data.jobs);
     } catch (err) {
       console.error(err);
@@ -59,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // If the SEEK button is clicked directly, submit the form
   if (seekBtn) {
     seekBtn.addEventListener('click', () => form.requestSubmit());
   }
