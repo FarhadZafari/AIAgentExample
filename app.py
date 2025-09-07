@@ -5,7 +5,7 @@ from html import escape
 app = Flask(__name__)
 
 def render_job_cards(jobs):
-    """Return a safe HTML snippet for the jobs list without using Jinja."""
+    """Return a safe HTML snippet for the jobs list."""
     if not jobs:
         return '<p style="color:#6b7280">No jobs found.</p>'
 
