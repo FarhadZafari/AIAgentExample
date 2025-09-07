@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidate Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Candidate Portal</h1>
+
+        <!-- Module 1: Name Greeting -->
+        <div class="module" id="module1">
+            <h2>Enter your name:</h2>
+            <input type="text" id="candidate_name" placeholder="Your Name">
+            <button id="submit_name">Submit</button>
+            <p id="greeting"></p>
+        </div>
+
+        <!-- Module 2: Skill Check -->
+        <div class="module" id="module2">
+            <h2>Check your skill level:</h2>
+            <input type="text" id="skill_input" placeholder="Skill (e.g., Python)">
+            <button id="submit_skill">Check</button>
+            <p id="skill_result"></p>
+        </div>
+    </div>
+
+    <!-- Include custom JS for backend integration -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
