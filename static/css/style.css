@@ -311,3 +311,8 @@ input:focus, select:focus{
 @media (prefers-reduced-motion: reduce){
   * { animation: none !important; transition: none !important; }
 }
+
+#detail-panel .body h5 { margin: 1rem 0 .5rem; font-size: 1rem; }
+#detail-panel .body p  { margin: .5rem 0; }
+#detail-panel .body ul { margin: .25rem 0 .75rem 1.25rem; }
+#detail-panel .body li { margin: .25rem 0; }
