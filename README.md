@@ -19,12 +19,12 @@ The goal is to provide an interactive platform where users can interact with the
 
 ## 📂 Project Structure (Initial)
 
-myapp/
+```myapp/
   static/           # CSS, JavaScript, images
   templates/        # HTML frontend
   app.py            # Flask backend entry point
   requirements.txt  # Python dependencies
-  README.md         # Project documentation
+  README.md         # Project documentation```
 
 ## 🔧 Setup Instructions (WIP)
 
