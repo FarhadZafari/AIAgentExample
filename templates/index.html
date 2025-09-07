@@ -45,35 +45,19 @@
     </div>
   </header>
 
-<main class="content container results-grid">
-  <!-- LEFT: job list -->
-  <section id="results" aria-label="Job results">
-    <article class="job-card" tabindex="0">
-      <h3>Senior Data Scientist</h3>
-      <p class="meta">Melbourne • Full-time • $160k–$180k</p>
-      <p class="excerpt">Lead experiments and build ML-powered recommendations at scale.</p>
-      <button class="btn-outline">View job</button>
-    </article>
+  <main class="content container results-grid">
+    <!-- LEFT: job list -->
+    <section id="results" aria-label="Job results"></section>
 
-    <article class="job-card" tabindex="0">
-      <h3>Machine Learning Engineer</h3>
-      <p class="meta">Sydney • Hybrid</p>
-      <p class="excerpt">Deploy and maintain model-serving infrastructure and pipelines.</p>
-      <button class="btn-outline">View job</button>
-    </article>
-  </section>
+    <!-- RIGHT: details panel -->
+    <aside id="detail-panel" aria-label="Job details" aria-live="polite">
+      <div class="placeholder">
+        <h4>No job selected</h4>
+        <p>Click a job to see the full description here.</p>
+      </div>
+    </aside>
+  </main>
 
-  <!-- RIGHT: details panel -->
-  <aside id="detail-panel" aria-label="Job details" aria-live="polite">
-    <div class="placeholder">
-      <h4>No job selected</h4>
-      <p>Click a job to see the full description here.</p>
-    </div>
-  </aside>
-</main>
-
-
-  <!-- Include custom JS for backend integration -->
   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
