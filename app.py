@@ -7,21 +7,41 @@ def index():
     return render_template('index.html')
 
 # API for Module 1: Candidate Greeting
-@app.route('/api/greet', methods=['POST'])
-def greet():
-    data = request.json
-    candidate_name = data.get('candidate_name', 'Guest')
-    greeting = f"Hello, {candidate_name}! Welcome to the platform."
-    return jsonify({"greeting": greeting})
+@app.route('/api/seek', methods=['POST'])
+def seek():
+    data = request.json  # {keywords, classification, where}
+    print("Search payload:", data)
 
-# API for Module 2: Candidate Skill Level Check
-@app.route('/api/check_skill', methods=['POST'])
-def check_skill():
-    data = request.json
-    skill = data.get('skill', '').lower()
-    level = "Advanced" if skill in ["python", "flask", "sql"] else "Beginner"
-    message = f"Your skill level in {skill.title()} is {level}."
-    return jsonify({"message": message})
+    # --- mock results from your backend ---
+    jobs = [
+        {
+            "title": "Senior Recommender Systems Scientist",
+            "location": "Melbourne, VIC",
+            "type": "Full-time",
+            "salary": "$165k–$185k",
+            "summary": "Own offline evaluation and A/B tests for personalization models at scale.",
+            "url": "https://example.com/job/1"
+        },
+        {
+            "title": "Machine Learning Engineer — Ranking",
+            "location": "Sydney, NSW",
+            "type": "Hybrid",
+            "salary": "$150k–$170k",
+            "summary": "Productionize L2R pipelines and model serving for search relevance.",
+            "url": "https://example.com/job/2"
+        },
+        {
+            "title": "Data Scientist (Experimentation)",
+            "location": "Remote (AU)",
+            "type": "Contract",
+            "salary": "$120/hr",
+            "summary": "Design bandit strategies and run end-to-end experiments on the jobs marketplace.",
+            "url": "https://example.com/job/3"
+        }
+    ]
+    # --------------------------------------
+
+    return jsonify({"jobs": jobs})
 
 if __name__ == "__main__":
     app.run(debug=True)
