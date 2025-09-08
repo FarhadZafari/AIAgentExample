@@ -358,30 +358,6 @@ def render_job_cards(jobs: list[dict]) -> str:
 
     return "\n".join(parts)
 
-# def render_detail_panel(job: dict) -> str:
-#     """Return safe HTML snippet for the right-hand detail panel content."""
-#     title = escape(job.get("title") or "Job")
-#     meta = _meta_line(job)
-#     desc = escape(job.get("description") or "No description available.")
-#     url = job.get("url") or ""
-#
-#     if url:
-#         url_attr = escape(url, quote=True)
-#         apply_cta = f'<a class="btn-seek" href="{url_attr}" target="_blank" rel="noopener">Apply now</a>'
-#     else:
-#         apply_cta = '<button class="btn-seek" disabled>Apply now</button>'
-#
-#     return f"""
-#     <h4 class="title">{title}</h4>
-#     {'<p class="meta">' + meta + '</p>' if meta else ''}
-#     <div class="body"><p>{desc}</p></div>
-#     <div class="actions">
-#       {apply_cta}
-#       <button class="btn-outline" type="button">Save</button>
-#       <button class="btn-outline" type="button">Share</button>
-#     </div>
-#     """
-
 def render_detail_panel(job: dict) -> str:
     title = escape(job.get("title") or "Job")
     meta  = _meta_line(job)
@@ -395,14 +371,16 @@ def render_detail_panel(job: dict) -> str:
     else:
         apply_cta = '<button class="btn-seek" disabled>Apply now</button>'
 
+    # NOTE: Add data-action="tailor" so the delegated listener can target reliably
     return f"""
     <h4 class="title">{title}</h4>
     {'<p class="meta">' + meta + '</p>' if meta else ''}
-    <div class="body">{desc_html}</div>   <!-- no extra <p> wrapper -->
+    <div class="body">{desc_html}</div>
     <div class="actions">
       {apply_cta}
       <button class="btn-outline" type="button">Save</button>
       <button class="btn-outline" type="button">Share</button>
+      <button id="tailorBtn" class="btn-outline" type="button" data-action="tailor">Tailor CV</button>
     </div>
     """
 
@@ -412,13 +390,23 @@ def index():
 
 @app.route("/api/seek", methods=["POST"])
 def seek():
-    # You can use the payload to filter JOBS; here we just echo mock results.
     data = request.get_json(silent=True) or {}
     print("Search payload:", data)
 
     jobs = list(JOBS.values())  # TODO: replace with real search/filter
     html = render_job_cards(jobs)
     return Response(html, mimetype="text/html")
+
+@app.route("/api/tailor-cv", methods=["POST"])
+def tailor_cv():
+    data = request.get_json(silent=True) or {}
+    print("Tailor CV payload:", data)
+
+    # For now just return a simple text response
+    return Response(
+        "<p style='color:#166534'>CV tailoring endpoint hit successfully!</p>",
+        mimetype="text/html"
+    )
 
 @app.route("/api/job/<job_id>", methods=["GET"])
 def job_detail(job_id: str):
