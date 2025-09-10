@@ -37,3 +37,5 @@ python app.py
 5. **Access the app**
 Open your browser at http://127.0.0.1:5000
 
+## Workflow Diagram
+View the interactive workflow diagram: [Click here](https://github.com/FarhadZafari/AIAgentExample/blob/main/agent_workflow_diagram.html)
