@@ -102,7 +102,7 @@ class ResumeTailorAgent:
         self.save_tailored_resume_tool: Tool = self._make_save_resume_tool()
 
         # Build graph
-        self.graph: CompiledGraph = self._build_graph()
+        self.graph = self._build_graph()
 
     # -------------------------
     # Public API
