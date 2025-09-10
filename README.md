@@ -37,3 +37,5 @@ python app.py
 5. **Access the app**
 Open your browser at http://127.0.0.1:5000
 
+**AI Agent workflow**
+<img width="867" height="1031" alt="Screenshot 2025-09-11 at 9 39 22 am" src="https://github.com/user-attachments/assets/61463a92-27a2-4e40-8f33-773c63c21a79" />
