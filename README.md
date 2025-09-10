@@ -36,7 +36,3 @@ python app.py
 
 5. **Access the app**
 Open your browser at http://127.0.0.1:5000
-
-## Workflow Diagram
-<iframe src="https://github.com/FarhadZafari/AIAgentExample/blob/main/agent_workflow_diagram.html" width="100%" height="600px" frameborder="0"></iframe>
-
