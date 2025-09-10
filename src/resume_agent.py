@@ -176,7 +176,7 @@ class ResumeTailorAgent:
     # Graph construction
     # -------------------------
 
-    def _build_graph(self) -> CompiledGraph:
+    def _build_graph(self):
         graph = StateGraph(AgentState)
 
         # Register nodes
