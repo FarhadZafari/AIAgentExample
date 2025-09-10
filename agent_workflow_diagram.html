@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangGraph Workflow Diagram</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .workflow-diagram {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+        }
+
+        .node {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            min-width: 120px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .node:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+        }
+
+        .start-end {
+            background: linear-gradient(135deg, #059669, #10b981);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .conditional {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
+            position: relative;
+        }
+
+        .conditional::before {
+            content: '?';
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #fbbf24;
+            color: #92400e;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .arrow {
+            width: 2px;
+            height: 30px;
+            background: linear-gradient(to bottom, #6366f1, #8b5cf6);
+            position: relative;
+            margin: 5px 0;
+        }
+
+        .arrow::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: -4px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 10px solid #8b5cf6;
+        }
+
+        .branch-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .branch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .branch-arrow {
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+            position: relative;
+            margin: 15px 0 5px 0;
+        }
+
+        .branch-arrow::after {
+            content: '';
+            position: absolute;
+            right: -8px;
+            top: -4px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 10px solid #8b5cf6;
+        }
+
+        .branch-label {
+            font-size: 11px;
+            color: #6366f1;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.1);
+            padding: 2px 8px;
+            border-radius: 6px;
+            margin-bottom: 5px;
+        }
+
+        .loop-arrow {
+            position: absolute;
+            right: -60px;
+            top: 50%;
+            width: 80px;
+            height: 80px;
+            border: 2px solid #f59e0b;
+            border-radius: 50%;
+            border-right: none;
+            border-bottom: none;
+            transform: rotate(45deg);
+        }
+
+        .loop-arrow::after {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            width: 0;
+            height: 0;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            border-top: 12px solid #f59e0b;
+            transform: rotate(-45deg);
+        }
+
+        .legend {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(99, 102, 241, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+        }
+
+        .legend-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #374151;
+            font-size: 16px;
+        }
+
+        .legend-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+
+        .regular-node { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
+        .start-end-color { background: linear-gradient(135deg, #059669, #10b981); border-radius: 50%; }
+        .conditional-color { background: linear-gradient(135deg, #dc2626, #ef4444); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">LangGraph AI Agent Workflow</h1>
+
+        <div class="workflow-diagram">
+            <!-- START -->
+            <div class="node start-end">START</div>
+            <div class="arrow"></div>
+
+            <!-- fetch_job -->
+            <div class="node">fetch_job</div>
+            <div class="arrow"></div>
+
+            <!-- fetch_resume -->
+            <div class="node">fetch_resume</div>
+            <div class="arrow"></div>
+
+            <!-- analyze (conditional) -->
+            <div class="node conditional">analyze</div>
+
+            <!-- Conditional branches -->
+            <div class="branch-container">
+                <div class="branch">
+                    <div class="branch-label">ask</div>
+                    <div class="branch-arrow"></div>
+                    <div class="node conditional" style="position: relative;">
+                        ask
+                        <!-- Loop back arrow -->
+                        <div class="loop-arrow"></div>
+                    </div>
+                </div>
+
+                <div class="branch">
+                    <div class="branch-label">tailor</div>
+                    <div class="branch-arrow"></div>
+                    <div class="node">tailor</div>
+                </div>
+            </div>
+
+            <!-- Convergence to save -->
+            <div class="arrow"></div>
+            <div class="node">save</div>
+            <div class="arrow"></div>
+
+            <!-- END -->
+            <div class="node start-end">END</div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-title">Legend</div>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-color regular-node"></div>
+                    <span>Regular Node</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color start-end-color"></div>
+                    <span>Start/End Node</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color conditional-color"></div>
+                    <span>Conditional Node</span>
+                </div>
+                <div class="legend-item">
+                    <div style="width: 16px; height: 2px; background: #f59e0b; border-radius: 2px;"></div>
+                    <span>Loop Connection</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add interactive hover effects
+        document.querySelectorAll('.node').forEach(node => {
+            node.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.05)';
+            });
+
+            node.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add click animations
+        document.querySelectorAll('.node').forEach(node => {
+            node.addEventListener('click', function() {
+                this.style.animation = 'pulse 0.6s ease-in-out';
+                setTimeout(() => {
+                    this.style.animation = '';
+                }, 600);
+            });
+        });
+
+        // Add tooltip functionality
+        function setupTooltips() {
+            const conditionalNodes = document.querySelectorAll('.conditional');
+
+            conditionalNodes.forEach(node => {
+                const tooltip = node.querySelector('.tooltip');
+                if (tooltip) {
+                    node.addEventListener('mouseenter', function() {
+                        tooltip.classList.add('show');
+                    });
+
+                    node.addEventListener('mouseleave', function() {
+                        tooltip.classList.remove('show');
+                    });
+                }
+            });
+        }
+
+        // Initialize tooltips
+        setupTooltips();
+    </script>
+</body>
+</html>

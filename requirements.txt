@@ -12,3 +12,5 @@ gunicorn==22.0.0
 
 # If frontend is served on a different domain/port
 Flask-Cors==4.0.0
+langgraph
+langchain_openai
