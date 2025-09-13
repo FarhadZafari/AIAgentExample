@@ -1,0 +1,36 @@
+<h3>Company Description</h3>
+<p>Hume City Council is one of Australia’s fastest growing and culturally diverse councils. We put the customer and our community at the centre of everything we do, ensuring services are efficient, accessible, and inclusive. Our Digital and Performance team drives innovative, user-centred digital solutions to improve services across the municipality.</p>
+
+<h3>Job Description</h3>
+<p><em>Create intuitive, accessible, and user-centred digital experiences that put the community first.</em></p>
+<p>We are seeking a UX Designer to join Hume City Council’s Digital and Performance team. In this role, you’ll turn user research and insights into practical, well-loved digital solutions that align with organisational goals and community needs. You will work collaboratively across service teams, IT, and external vendors to enhance customer experiences through design and iteration.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+<li>Advocate for user needs by translating research into actionable digital improvements.</li>
+<li>Ensure digital experiences align with the Customer Experience Action Plan.</li>
+<li>Embed usability testing, customer research, and journey mapping into design decisions.</li>
+<li>Identify opportunities to simplify, automate, and improve services.</li>
+<li>Work collaboratively with service teams, IT, and vendors to deliver user-centred solutions.</li>
+<li>Use insights and feedback to refine digital experiences continuously.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+<li>Proven experience in UX research, wireframing, prototyping, and interaction design with strong usability and accessibility focus.</li>
+<li>Experience with customer-facing platforms, CRMs, and omni-channel systems.</li>
+<li>Clear understanding of digital experience platforms and how they support organisational and customer outcomes.</li>
+<li>Strong communication and stakeholder engagement skills, able to influence without authority.</li>
+<li>Passion for advocating for the customer and improving digital services through insight and iteration.</li>
+<li>Confidence using data tools such as Excel, Power BI, or SQL to inform design decisions.</li>
+</ul>
+
+<h4>Qualifications & Experience</h4>
+<ul>
+<li>Tertiary degree in a design field or extensive equivalent experience.</li>
+<li>Experience in local government or public sector environments is advantageous.</li>
+<li>Portfolio demonstrating relevant UX design work.</li>
+</ul>
+
+<h4>Additional Information</h4>
+<p>This is a permanent, full-time role with a salary of $107,811.68 per annum plus superannuation. Hume City Council is committed to creating an inclusive, collaborative, and supportive work environment. Applicants must undergo background and probity checks including Reference Checks, Working with Children Check, and a Criminal Record Check. Council values diversity and encourages people of all ages, abilities, and backgrounds to apply.</p>

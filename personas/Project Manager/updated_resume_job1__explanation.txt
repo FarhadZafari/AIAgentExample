@@ -1,0 +1,20 @@
+I've tailored Sophie's resume and created a cover letter for the Underground Mining Supervisor/Ventilation Coordinator position at Manuplex. Here's what I did:
+
+**Resume Tailoring:**
+1. Updated the professional summary to highlight transferable skills relevant to mining operations
+2. Restructured job descriptions to emphasize:
+   - Safety compliance and risk management
+   - Planning and communication skills
+   - Team leadership and mentoring
+   - Inspection and compliance experience
+3. Reorganized skills section to highlight those most relevant to the mining supervisor role
+4. Added safety-related achievements to demonstrate commitment to safety standards
+
+**Cover Letter Approach:**
+1. Acknowledged the difference in background (construction vs. mining) while emphasizing transferable skills
+2. Directly addressed key responsibilities from the job description
+3. Highlighted Sophie's strengths that align with the "To Be Successful" requirements
+4. Expressed interest in Manuplex's company culture and growth opportunities
+5. Acknowledged the need to build specific mining knowledge while emphasizing adaptability
+
+The tailored documents have been saved to the requested file path: 'personas/Project Manager/updated_resume_job1.pdf'.

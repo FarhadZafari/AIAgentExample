@@ -1,0 +1,38 @@
+<h3>Company Description</h3>
+<p>Our NSW Government client is seeking a highly capable Senior Project Manager to drive strategic projects across the organisation. The role is ideal for professionals with energy or utilities sector experience, capable of managing complex initiatives while ensuring alignment across multiple business units.</p>
+<p>The organisation offers flexible work arrangements, with high work-from-home options while occasionally requiring travel to Sydney or Port Macquarie offices.</p>
+
+<h3>Job Description</h3>
+<p><em>Lead complex projects, drive organisational change, and deliver impactful outcomes across NSW.</em></p>
+<p>The Senior Project Manager will oversee project delivery, guide organisational change, manage project finances and schedules, and identify risks and issues. Experience working with IT vendors and diverse technical teams is highly valuable.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+<li>Manage relationships across business units to ensure successful project delivery.</li>
+<li>Track projects against deliverables, including financials and schedules.</li>
+<li>Consider end-customer impacts and drive changes that minimise disruption.</li>
+<li>Adhere to federal government regulations and implement emergency backstop functionality where required.</li>
+<li>Control export limits from consumers and enable adjustments as needed.</li>
+<li>Develop meaningful performance reporting for executive stakeholders and relevant parties.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+<li>Demonstrated experience managing diverse technical teams in IT and corporate environments.</li>
+<li>Experience in energy or utilities sector, with thorough knowledge of connection processes.</li>
+<li>High-level interpersonal skills with the ability to influence outcomes across multiple stakeholders.</li>
+<li>Proven capability in navigating competing priorities and changing environments.</li>
+<li>Desirable: Project/Programme Management certifications (Prince2, PMBOK, MSP).</li>
+<li>Experience with Salesforce platforms is highly valued.</li>
+<li>Based in NSW with full Australian working rights.</li>
+</ul>
+
+<h4>Contract & Compensation</h4>
+<ul>
+<li>Contract Duration: 12-month initial contract.</li>
+<li>Daily Pay: $1,150 to $1,288 inclusive of super per day.</li>
+<li>Location: Wider NSW, with occasional travel to Sydney or Port Macquarie offices.</li>
+</ul>
+
+<h3>How to Apply</h3>
+<p>If this opportunity aligns with your skills and experience, please apply with your CV. Ensure you meet the work eligibility requirements for Australia.</p>

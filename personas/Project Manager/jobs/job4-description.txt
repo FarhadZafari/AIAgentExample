@@ -1,0 +1,46 @@
+<h3>Company Description</h3>
+<p>Our client is one of the nation's largest providers of government-funded medical services for children, young adults, pensioners, and veterans. They are committed to improving healthcare outcomes through innovative solutions and high-quality service delivery.</p>
+
+<h3>Job Description</h3>
+<p><em>Lead critical healthcare projects. Improve patient outcomes. Drive innovation with AI.</em></p>
+<p>We are seeking an experienced Project Manager to oversee and drive the AI Clinical Services initiative. In this pivotal role, you’ll ensure project success by coordinating teams, managing resources, and engaging stakeholders to improve healthcare delivery and operational efficiency.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+    <li>Lead, motivate, and support project teams by assigning tasks, monitoring progress, and ensuring resources are available for success.</li>
+    <li>Oversee execution of project activities, managing interdependencies and ensuring deliverables are achieved on time, within scope, and to quality standards.</li>
+    <li>Engage and communicate effectively with stakeholders, including team members, partners, customers, and senior management.</li>
+    <li>Identify risks and issues, implement mitigation strategies, and proactively manage project challenges.</li>
+    <li>Monitor and control project budgets, ensuring financial resources are managed efficiently.</li>
+    <li>Maintain accurate and up-to-date project documentation, prepare regular status reports, and ensure compliance with the project framework.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+    <li>Proven leadership and team management skills.</li>
+    <li>Strong communication, stakeholder engagement, and problem-solving abilities.</li>
+    <li>Ability to manage complex projects and work across diverse teams.</li>
+    <li>Commitment to delivering projects on time, within scope, and within budget.</li>
+    <li>Adaptable, proactive, and results-oriented mindset.</li>
+</ul>
+
+<h4>Qualifications & Experience</h4>
+<ul>
+    <li>5+ years of experience managing medium to large-scale and complex projects.</li>
+    <li>Experience in projects involving application development and data management.</li>
+    <li>Competency in Microsoft Office 365 or other enterprise applications (nice to have).</li>
+    <li>Proficiency in project management methodologies (e.g., Agile, Waterfall) and standard project management tools.</li>
+    <li>Demonstrated success in delivering projects on time, within scope, and within budget.</li>
+</ul>
+
+<h3>Why Join Our Client?</h3>
+<ul>
+    <li>Be part of a mission-driven organisation improving healthcare for children, young adults, pensioners, and veterans.</li>
+    <li>Work on cutting-edge AI clinical services initiatives.</li>
+    <li>Collaborate with passionate professionals across clinical, IT, and operational teams.</li>
+    <li>Opportunities for professional growth and leadership development.</li>
+</ul>
+
+<h3>Additional Information</h3>
+<p>For more information about this role or to apply, please contact Jennifer Bohm on 02 9464 5518 or email <a href="mailto:jbohm@paxus.com.au">jbohm@paxus.com.au</a>. Quote the relevant job reference number when applying.</p>
+<p><em>Paxus values diversity and welcomes applications from Indigenous Australians, people from diverse cultural and linguistic backgrounds, and people living with a disability.</em></p>

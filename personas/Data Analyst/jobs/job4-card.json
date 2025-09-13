@@ -1,0 +1,21 @@
+{
+    "id": "4",
+    "title": "Data Analyst",
+    "company": "City of Port Phillip",
+    "tag": "",
+    "location": "St Kilda, Melbourne VIC (Hybrid)",
+    "benefits": "Band 6 salary range $95,799 - $104,420 plus 12% superannuation; Flexible working arrangements; Training and development opportunities; Study assistance; Paid parental leave; Health and wellbeing program with gym and pool access; Active social club; Employee Assistance Program (EAP); Inclusive and diverse workplace culture",
+    "summary": [
+        "Join the City of Port Phillip’s dynamic team to deliver data-driven insights supporting strategic projects and community services.",
+        "Collaborate with stakeholders to gather requirements and design end-to-end BI solutions.",
+        "Develop and maintain dashboards and reports using Power BI and ERP tools.",
+        "Use Python and R for advanced data analysis, modelling, and automation.",
+        "Cleanse, manage, and secure data to ensure integrity and reliability.",
+        "Support testing activities, maintain documentation, and contribute to continuous improvements.",
+        "Bring strong skills in Power BI, DAX, R, Python, and experience with large datasets.",
+        "Knowledge of TechnologyOne ERP systems, Azure, and ServiceNOW is advantageous."
+    ],
+    "salary": "$160k–$195k",
+    "posted": "Applications close 31 August 2025, 11:59pm",
+    "logo": "logos/City_of_Port_Phillip_logo.png"
+}

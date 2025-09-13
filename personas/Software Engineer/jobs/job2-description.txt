@@ -1,0 +1,47 @@
+<h3>Company Description</h3>
+<p>SEEK is a global leader in connecting people to employment, education, volunteer opportunities, and small business solutions. Our purpose is to help people live more fulfilling and productive working lives and support organisations to succeed. We celebrate diversity, high-performance, and innovation in our workplaces.</p>
+<p>Our award-winning head office in Cremorne provides modern collaborative spaces, sweeping city views, games areas, sit/stand desks, end-of-trip facilities, and opportunities to connect socially with colleagues.</p>
+
+<h3>Job Description</h3>
+<p><em>Join SEEK’s Candidate Quality squad to shape data-driven solutions and deploy machine learning models that improve how candidates are matched with jobs.</em></p>
+<p>We are seeking a motivated Software Engineer to contribute to the Artificial Intelligence Platform Services (AIPS) department. You will help design, build, and maintain scalable systems, collaborate with data scientists and product managers, and deliver high-quality engineering solutions.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+<li>Collaborate with cross-functional teams to design and build scalable, robust systems.</li>
+<li>Solve challenging problems in data engineering, cloud infrastructure, and ML ops.</li>
+<li>Adapt to rapidly changing requirements and evolving designs.</li>
+<li>Write clean, maintainable, and testable code following best practices.</li>
+<li>Take full ownership of work from concept to deployment with autonomy and initiative.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+<li>Strong technical and problem-solving skills.</li>
+<li>Excellent communication and interpersonal abilities.</li>
+<li>Curiosity and passion for cloud computing, data engineering, and machine learning.</li>
+<li>Self-motivated with a sense of ownership and responsibility.</li>
+<li>Team player who enjoys learning and collaborating with others.</li>
+</ul>
+
+<h4>Preferred Technical Experience</h4>
+<ul>
+<li>Languages: Python, Java, Scala, SQL</li>
+<li>Cloud: AWS (EC2, Lambda, SQS, SNS, Athena, CloudFormation)</li>
+<li>Data & ML: Spark, Databricks</li>
+<li>DevOps: CI/CD, Infrastructure as Code, automation tools</li>
+</ul>
+
+<h4>Why Join SEEK?</h4>
+<ul>
+<li>Annual performance bonus plan.</li>
+<li>Flexible working arrangements including office and WFH days.</li>
+<li>Paid and unpaid leave benefits, including Personal Flexi Days, Volunteer Days, and additional purchasable leave.</li>
+<li>Parental support: 14 weeks paid primary carers leave, 2 weeks paid partner leave.</li>
+<li>Work from anywhere up to 4 weeks per financial year.</li>
+<li>Commitment to sustainability: carbon neutral operations, renewable energy, and net-zero target by 2030.</li>
+<li>Inclusive, purpose-driven culture that values diversity of people and ideas.</li>
+</ul>
+
+<h4>Enquire / Apply</h4>
+<p>For more information or support with adjustments throughout the recruitment process, SEEK encourages candidates to contact the recruitment team. Only candidates with eligible right to work will be considered.</p>

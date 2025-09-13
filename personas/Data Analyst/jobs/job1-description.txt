@@ -1,0 +1,61 @@
+<h3>Company Description</h3>
+<p>Epworth HealthCare is Victoria’s largest not-for-profit private health care group, renowned for excellence in diagnosis, treatment, care and rehabilitation. Epworth is an innovator in Australia’s health system, embracing the latest in evidence-based medicine to pioneer treatments and services for our patients.</p>
+
+<p>Our values and purpose define Epworth's approach and delivery. We pride ourselves on communicating and delivering them in a real and meaningful way. <strong>Every Patient Matters.</strong></p>
+
+<h3>Job Description</h3>
+<p><em>Transform healthcare with data. Drive strategy. Improve lives.</em></p>
+<p>Epworth is seeking a passionate and experienced Data Scientist to join our Strategy & Performance team. In this pivotal role, you’ll harness the power of data to shape strategic decisions, enhance patient outcomes, and optimise hospital operations.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+    <li>Develop predictive models and advanced analytics to support strategic initiatives.</li>
+    <li>Analyse clinical, operational, and financial data to uncover trends and opportunities.</li>
+    <li>Build automation and optimisation tools to improve hospital performance.</li>
+    <li>Design interactive dashboards and visualisations for executive decision-making.</li>
+    <li>Translate complex data into actionable insights for non-technical stakeholders.</li>
+    <li>Collaborate across departments to ensure data integrity and alignment with goals.</li>
+    <li>Lead research into emerging healthcare analytics trends and technologies.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+    <li>Advanced analytical and problem-solving skills.</li>
+    <li>Emotional maturity, integrity, and sound judgment.</li>
+    <li>Ability to deal with ambiguity and change.</li>
+    <li>Commitment to excellence in patient safety and continuous improvement.</li>
+    <li>Strong work ethic, adaptability, and prioritisation skills.</li>
+    <li>Confidence in stakeholder engagement and collaboration.</li>
+</ul>
+
+<h4>Qualifications & Experience</h4>
+<ul>
+    <li>Tertiary qualification in Data Science, Statistics, Computer Science, or related field.</li>
+    <li>4+ years in data science with healthcare analytics experience.</li>
+    <li>Expertise in predictive modelling, statistics, and machine learning.</li>
+    <li>Proficiency in Python, R, SQL, Power BI.</li>
+    <li>Understanding of hospital performance metrics and financial optimisation.</li>
+    <li>Excellent communication and strategic thinking skills.</li>
+</ul>
+
+<h3>Why Join Epworth?</h3>
+<ul>
+    <li>Be part of a mission-driven organisation transforming healthcare through data.</li>
+    <li>Collaborate with passionate professionals across Strategy, IT, and Clinical teams.</li>
+    <li>Drive innovation in a supportive environment.</li>
+    <li>Enjoy opportunities for professional growth and leadership.</li>
+</ul>
+
+<h3>Additional Information</h3>
+<p>At Epworth, it’s a community. You’ll enjoy benefits such as:</p>
+<ul>
+    <li>Salary packaging up to $15,900 pre-tax annually.</li>
+    <li>Australia’s largest educational scholarship program of its kind.</li>
+    <li>Discounted private health insurance.</li>
+    <li>Ability to purchase up to four additional weeks of leave.</li>
+</ul>
+
+<h3>Enquire / Apply</h3>
+<p>Ready to make a difference? Apply now and help shape the future of healthcare at Epworth.</p>
+<p>For more information, contact <a href="mailto:talent@epworth.org.au">talent@epworth.org.au</a> or call (03) 9426 0606.</p>
+<p><em>Applications will be reviewed as they are received and may close early.</em></p>

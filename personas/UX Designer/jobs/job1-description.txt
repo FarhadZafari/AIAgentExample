@@ -1,0 +1,43 @@
+<h3>Company Description</h3>
+<p>WebOracle is a well-respected web development and design agency based in South Melbourne. We specialise in custom web design, development, and digital marketing solutions tailored to meet clients’ goals. For over 20 years, we have delivered bespoke websites for businesses of all sizes, both locally and globally, combining engaging UI with intuitive, user-friendly UX to create high-performing digital experiences.</p>
+<p>See our work at <a href="https://www.weboracle.com.au">www.weboracle.com.au</a>.</p>
+
+<h3>Job Description</h3>
+<p><em>Build functional, scalable, and visually impressive web solutions in a collaborative and fast-paced environment.</em></p>
+<p>WebOracle is seeking a Senior Web Developer with strong experience in headless WordPress development. You will manage multiple projects, work closely with clients and internal teams, and help deliver responsive, accessible, and SEO-friendly websites that exceed expectations.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+<li>Manage multiple web projects from design to deployment.</li>
+<li>Collaborate with designers, project managers, and stakeholders to bring concepts to life.</li>
+<li>Implement headless WordPress development following best practices.</li>
+<li>Deliver responsive, accessible, and SEO-friendly builds.</li>
+<li>Communicate effectively with clients and manage expectations.</li>
+<li>Conduct thorough testing and quality assurance on all deliverables.</li>
+<li>Provide design input and support for client-facing presentations.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+<li>5+ years of web development experience across diverse project types.</li>
+<li>Proficiency in WordPress (headless architecture), HTML, CSS, JavaScript, and PHP.</li>
+<li>Strong understanding of modern frameworks, build tools, and responsive design.</li>
+<li>Excellent problem-solving skills and proactive mindset.</li>
+<li>Confident in client-facing roles and presenting technical concepts.</li>
+<li>Highly organised, detail-oriented, and able to manage workload effectively.</li>
+<li>Solid knowledge of Adobe Creative Suite (Photoshop, InDesign, Illustrator).</li>
+<li>Passionate about learning, quality, and pixel-perfect execution.</li>
+<li>Australian Citizen or Permanent Resident.</li>
+</ul>
+
+<h4>Why Join WebOracle?</h4>
+<ul>
+<li>Work with a creative, collaborative, and supportive team.</li>
+<li>Opportunity to manage diverse web projects and develop your skills.</li>
+<li>Be part of a company that values loyalty, creativity, and long-term growth.</li>
+<li>Engage directly with clients and shape the digital experience end-to-end.</li>
+</ul>
+
+<h4>Additional Information</h4>
+<p>If you are a motivated and experienced web developer with a passion for WordPress and front-end development, we want to hear from you. Send your resume, cover letter, and design portfolio to join our WebOracle family.</p>
+<p>No recruiters please – we prefer personal, one-on-one engagement.</p>

@@ -1,0 +1,21 @@
+I've tailored the resume to highlight aspects that would be relevant for the WebOracle Senior Web Developer position. Here are the key changes I made:
+
+1. **Professional Summary**: Enhanced to emphasize collaborative skills, responsive design experience, and ability to create accessible web solutions.
+
+2. **Professional Experience**:
+   - Added bullet points about accessibility, SEO-friendly designs, and client presentations
+   - Highlighted collaboration with developers and implementation of design systems
+   - Added mention of WordPress experience in the Junior Designer role
+   - Emphasized responsive design work
+
+3. **Key Skills**: 
+   - Reorganized into categories for better readability
+   - Added relevant skills like Responsive Design, Accessibility Standards, and SEO Principles
+   - Included additional Adobe Creative Suite tools mentioned in the job description
+   - Added collaboration and process skills valued by the employer
+
+4. **Achievements**: 
+   - Reworded to focus on outcomes relevant to web development
+   - Added Australian Citizenship status as mentioned in job requirements
+
+While this resume still reflects Daniel's UX background, it better positions his skills as transferable to the web development role by highlighting his technical knowledge, collaborative approach, and understanding of web standards that would complement WebOracle's focus on delivering high-performing digital experiences.

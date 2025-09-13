@@ -1,0 +1,56 @@
+<h3>Company Description</h3>
+<p>Jacobi provides an industry-disrupting SaaS platform for multi-asset portfolio design and analytics. Our open architecture technology empowers investment management teams with powerful portfolio analytics and customised workflows that can be easily shared with clients and stakeholders. Our team operates globally across Brisbane, London, and San Francisco, developing and deploying innovative software solutions in real time.</p>
+
+<h3>Job Description</h3>
+<p><em>Build innovative data solutions. Collaborate globally. Grow your engineering career.</em></p>
+<p>Jacobi is seeking an enthusiastic and talented Graduate Data Engineer to join our growing team. You will contribute to the Jacobi platform by building, maintaining, and monitoring ETL pipelines, architecting custom solutions for key clients, and collaborating with our global software teams. This role offers exposure to high-profile clients, market data vendors, and innovative technology in a supportive, hybrid working environment.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+    <li>Contribute to Jacobi’s core platform by building, maintaining, and monitoring ETL pipelines.</li>
+    <li>Architect and implement solutions to custom requirements for key clients.</li>
+    <li>Collaborate with our global team across Brisbane, Sydney, London, and San Francisco.</li>
+    <li>Interface with high-profile clients and market data vendors on data management.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+    <li>Bachelor's degree in Computer Science, Engineering, Mathematics, or related discipline.</li>
+    <li>0-3 years of experience in software development.</li>
+    <li>Proficiency in Python programming or similar languages.</li>
+    <li>Experience with SQL and relational databases.</li>
+    <li>Eager to learn, with a passion for technology and software best practices.</li>
+</ul>
+
+<h4>Nice to Have</h4>
+<ul>
+    <li>Knowledge of Python libraries such as PySpark and Pandas.</li>
+    <li>Experience with Databricks or similar platforms.</li>
+    <li>Familiarity with scheduling tools such as Airflow, Prefect, Dagster, or Databricks Workflows.</li>
+    <li>Experience with Git, cloud platforms (AWS preferred), and Infrastructure-as-Code tools (e.g., Terraform).</li>
+    <li>Experience interacting with REST APIs and database technologies.</li>
+    <li>Study, experience, or knowledge in economics or finance.</li>
+</ul>
+
+<h3>Why Join Jacobi?</h3>
+<ul>
+    <li>Competitive salary with equity and bonus potential.</li>
+    <li>Flexible hybrid work arrangements supporting engagement and productivity.</li>
+    <li>Opportunities for personal growth and professional development.</li>
+    <li>Relaxed and supportive team-based environment that encourages new ideas and autonomy.</li>
+</ul>
+
+<h3>Application Questions</h3>
+<p>Your application will include the following questions:</p>
+<ul>
+    <li>How many years' experience do you have as a Data Engineer?</li>
+    <li>Have you completed a qualification in Computer Science?</li>
+    <li>How many years' experience do you have as a software engineer?</li>
+    <li>Which of the following programming languages are you experienced in?</li>
+    <li>How many years' experience do you have using SQL queries?</li>
+    <li>Which of the following statements best describes your right to work in Australia?</li>
+    <li>Which of the following Relational Database Management Systems (RDBMS) are you experienced with?</li>
+</ul>
+
+<h3>Enquire / Apply</h3>
+<p>Ready to join Jacobi? Apply now to contribute to a leading platform in portfolio analytics and work with a collaborative, global team.</p>

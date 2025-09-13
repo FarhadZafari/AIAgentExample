@@ -1,0 +1,35 @@
+<h3>Company Description</h3>
+<p>Our client is a Commonwealth Government organisation focused on providing support to Australians living with disability. They are committed to delivering inclusive, accessible, and high-quality digital services to improve the lives of their participants.</p>
+
+<h3>Job Description</h3>
+<p><em>Design accessible, user-centered digital experiences. Influence projects. Improve services.</em></p>
+<p>We are seeking an experienced UX/UI Designer for a 12 + 12 month contract to support hybrid work in Deakin, ACT. In this role, you will design intuitive, accessible interfaces and contribute to projects that enhance service delivery for people living with disability.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+    <li>Conduct business, provider, and participant engagement activities to co-design requirements and project outcomes, including process, system, and information changes.</li>
+    <li>Design wireframes and prototypes in both low and high fidelity for web and mobile applications.</li>
+    <li>Influence project documentation to ensure UI/UX requirements are captured, including requirements specifications, process maps, service design artefacts, functional and non-functional requirements, change management, and data considerations.</li>
+    <li>Identify opportunities for process improvements and collaborate with business areas to recommend enhancements.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+    <li>Experience designing for Salesforce platforms.</li>
+    <li>Proficiency in accessibility design and development, with an enthusiasm for inclusive digital experiences.</li>
+    <li>Strong collaboration, communication, and problem-solving skills.</li>
+    <li>Ability to think creatively and advocate for user-centered design practices.</li>
+</ul>
+
+<h4>Additional Information</h4>
+<ul>
+    <li>Contract: 12 + 12 months</li>
+    <li>Location: Deakin, ACT – Hybrid</li>
+    <li>Baseline Security Clearance required</li>
+</ul>
+
+<h3>How to Apply</h3>
+<p>For more information or a full job description, please contact Jess at the Recruitment Hive by clicking the Quick Apply button or call (02) 6299 1006. Applications close on Friday, 22 August 2025 at 11 AM.</p>
+
+<h3>Diversity & Inclusion</h3>
+<p>The Recruitment Hive values diversity and is an Equal Opportunity Employer. We encourage people with disabilities, Indigenous Australians, veterans, and individuals from all backgrounds to apply.</p>

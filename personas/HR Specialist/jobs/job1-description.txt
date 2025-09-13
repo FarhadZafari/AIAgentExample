@@ -1,0 +1,54 @@
+<h3>Company Description</h3>
+<p>Ferrero is a family-owned company with a truly progressive and global outlook and iconic brands such as Nutella®, Tic Tac®, Ferrero Rocher®, Raffaello®, Kinder Bueno®, and Kinder Surprise®. Represented in more than 50 countries, with products sold in more than 170, the Ferrero Group is loved by generations worldwide. Our 40,000 dedicated employees celebrate care and quality, crafting a business, careers, and brands we are proud of. Join us, and you could be one of them.</p>
+
+<h3>Diversity Statement</h3>
+<p>Ferrero is committed to building a diverse and inclusive culture where all employees feel welcomed and appreciated. We nurture the curiosity and natural abilities of our employees, providing them the means to succeed personally and professionally. The diversity of our talents creates a multicultural, innovative, and rewarding work environment.</p>
+
+<h3>Job Description</h3>
+<p><em>Empower people, enable performance, and shape the workforce of a global brand.</em></p>
+<p>Ferrero is seeking a Plant HR Business Partner (HRBP) at our Lithgow plant. This pivotal role acts as the primary HR liaison for the Plant, ensuring alignment with Group policies while addressing local workforce needs. You will drive talent development, employee engagement, labor relations, and HR systems management to foster a productive and inclusive workplace.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+    <li>Manage Plant HR strategy and implement Group policies locally.</li>
+    <li>Ensure HR policies are compliant with Group standards and local regulations.</li>
+    <li>Support labor relations and participate in union meetings alongside the ANZ Cluster HRBP.</li>
+    <li>Oversee recruitment, hiring, and onboarding processes.</li>
+    <li>Prepare employment contracts in line with legal and Group requirements.</li>
+    <li>Support professional development and training programs, especially for blue-collar employees.</li>
+    <li>Lead engagement initiatives and contribute to a positive workplace culture.</li>
+    <li>Collaborate with Finance and Payroll teams to ensure accurate payroll processing.</li>
+    <li>Manage attendance, leave, and overtime tracking systems.</li>
+    <li>Maintain accurate HR data in SAP and other systems.</li>
+    <li>Support internal and external audits with reliable HR documentation.</li>
+</ul>
+
+<h4>Qualifications & Experience</h4>
+<ul>
+    <li>University degree in Human Resources, Business Administration, or related field.</li>
+    <li>Relevant HR business partnering experience, preferably in manufacturing or industrial settings.</li>
+    <li>Knowledge of staffing, talent development, rewards, labor law, and local HR best practices.</li>
+    <li>Excellent interpersonal, cross-functional communication, and stakeholder management skills.</li>
+    <li>Ability to work independently and collaboratively in a fast-paced environment.</li>
+    <li>Flexibility, adaptability, and the ability to work under pressure to meet deadlines.</li>
+    <li>Advanced MS Office skills; SAP knowledge is a plus.</li>
+</ul>
+
+<h4>How to Be Successful</h4>
+<ul>
+    <li>Be consumer, product, and quality-focused.</li>
+    <li>Demonstrate dedication to crafting brilliant results for consumers worldwide.</li>
+</ul>
+
+<h3>Why Join Ferrero?</h3>
+<ul>
+    <li>Be part of a global, family-owned brand with iconic products.</li>
+    <li>Work in a multicultural, innovative, and highly rewarding environment.</li>
+    <li>Opportunities for professional growth and career development.</li>
+    <li>Contribute to a culture that values care, quality, and people.</li>
+</ul>
+
+<h3>Enquire / Apply</h3>
+<p>Ready to make a difference? Apply now and help shape the workforce of Ferrero.</p>
+<p>For more information, contact <a href="mailto:talent@ferrero.com">talent@ferrero.com</a> or call the Lithgow plant office.</p>
+<p><em>Applications will be reviewed as they are received and may close early.</em></p>

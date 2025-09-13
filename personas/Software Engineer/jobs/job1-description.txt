@@ -1,0 +1,40 @@
+<h3>Company Description</h3>
+<p>Search Property, founded by Ravi Sharma, Australia’s #1 Real Estate YouTuber and 2024 Sydney Young Entrepreneur of the Year, is helping Australians build wealth through property. Recognised twice as a finalist for REB’s Best Buyer’s Agency, the company is expanding its team to accelerate innovation in both internal tools and public-facing applications.</p>
+
+<h3>Job Description</h3>
+<p><em>Build software that matters. Shape the technical direction of a fast-moving property tech company.</em></p>
+<p>We are seeking a Software Engineer to join our newly formed engineering team. You’ll work collaboratively and independently on projects that improve efficiency, enhance user experience, and influence the future technical architecture of the company.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+<li>Write robust backend and frontend code with unit and feature tests.</li>
+<li>Lead initiatives from discovery through delivery, owning technical architecture and execution.</li>
+<li>Balance trade-offs between ideal architecture and shipping fast; make pragmatic decisions.</li>
+<li>Communicate project status clearly to stakeholders.</li>
+<li>Write technical documentation and share ideas effectively.</li>
+<li>Conduct technical spikes to validate approaches and identify potential bottlenecks.</li>
+<li>Monitor post-launch metrics using tools like DataDog; triage and resolve bugs promptly.</li>
+<li>Enable team members through reusable libraries and shared internal tools.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+<li>2–5 years professional experience as a software engineer.</li>
+<li>Strong computer science fundamentals, with solid knowledge of data structures and algorithms.</li>
+<li>Experience with web application architecture and backend/frontend development.</li>
+<li>Proficiency in Python, JavaScript/React, Laravel PHP, or comparable frameworks.</li>
+<li>Experience building, consuming, and documenting APIs.</li>
+<li>Curious, resourceful, and proactive in learning new technologies and debugging issues.</li>
+<li>Strong communication skills and ability to collaborate across teams.</li>
+</ul>
+
+<h4>Why Join Search Property?</h4>
+<ul>
+<li>Hands-on engineering culture with cross-department collaboration.</li>
+<li>Autonomy and ownership of your work; influence technical decisions and architecture.</li>
+<li>Hybrid work model: 3 days in-office, 2 days WFH in Macquarie Park.</li>
+<li>Modern office campus with gym, café, childcare facilities, and Metro access.</li>
+</ul>
+
+<h4>How to Apply</h4>
+<p>Apply via the Google Form: <a href="https://forms.gle/hBVpvC6xGbgGSQUV9">https://forms.gle/hBVpvC6xGbgGSQUV9</a>. No cover letter required—share what you’ve built and what you’re excited to learn next.</p>

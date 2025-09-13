@@ -1,34 +1,42 @@
-**Farhad Zafari**  
+Farhad Zafari  
 Melbourne, Australia  
-[Your Contact Information]  
-[Your LinkedIn Profile]  
+[Your Phone Number] | [Your Email] | [LinkedIn Profile]  
 
 ---
 
-### Skills
-- **Programming Languages:** Python, PySpark  
+### Data Scientist  
+
+#### Skills  
+- **Programming:** Python, PySpark  
 - **Cloud Technologies:** AWS  
-- **Machine Learning:** Learning to Rank (LTR) models, Reinforcement Learning (RL) bandits  
-- **Statistical Analysis:** A/B testing  
+- **Machine Learning:** LTR models, RL bandits, A/B testing  
+- **Data Engineering:** Databricks  
 
-### Experience
-**Machine Learning Engineer**  
-SEEK | [Month, Year] – Present  
-- Developed and productionized LTR models to enhance user engagement and improve search relevance.  
-- Implemented RL bandit algorithms to optimize content delivery and conversion rates.  
-- Conducted comprehensive A/B tests to validate model performance and inform decision-making.
+#### Experience  
 
-### Education
-[Your Degree] in [Your Field]  
-[Your University] | [Graduation Year]
+**Data Scientist**  
+SEEK, Melbourne, Australia  
+[Month, Year] – Present  
+- Developed and productionized LTR models to improve search results and user engagement.  
+- Implemented A/B testing frameworks to evaluate model performance and optimize outcomes.
+- Experimented with reinforcement learning bandit algorithms for personalized content delivery.
 
 ---
 
-**Publications**  
-[List relevant publications if applicable]
+### Education  
+[Your Degree]  
+[Your University], [Year of Graduation]  
+
+---
+
+### Publications  
+[List any relevant publications if applicable]  
 
 ---
 
 ### Additional Information  
-- Willing to relocate if necessary.  
-- Passionate about utilizing data to drive strategic decisions and improve user experiences.   
+- Open to relocation to Sydney.  
+
+---  
+
+**Note:** Ensure to fill in sections like your phone number, email, LinkedIn profile, degree, university, and any relevant publications.

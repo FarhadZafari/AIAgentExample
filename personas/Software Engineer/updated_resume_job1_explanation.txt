@@ -1,0 +1,20 @@
+I've tailored the resume to better match the job description for the Software Engineer position at Search Property. Here's what I've updated:
+
+1. **Professional Summary**: Emphasized experience with both backend and frontend development and highlighted project ownership abilities.
+
+2. **Professional Experience**: 
+   - Added details about API documentation to match the job's focus on documentation
+   - Highlighted pragmatic decision making in architecture design
+   - Emphasized full-stack capabilities (backend and frontend)
+   - Added monitoring experience which aligns with the job's requirement for using tools like DataDog
+   - Showcased creating reusable libraries to enable team members
+
+3. **Key Skills**:
+   - Reorganized to highlight Python and JavaScript/React which are specifically mentioned in the job description
+   - Added a dedicated section for API development experience
+   - Added technical documentation as a soft skill to match job requirements
+
+4. **Achievements**:
+   - Added a point about balancing architectural best practices with pragmatic delivery, which directly addresses one of the key responsibilities in the job description
+
+These changes highlight how your experience aligns with Search Property's requirements for a Software Engineer who can write robust code, lead initiatives, make pragmatic technical decisions, and communicate effectively.

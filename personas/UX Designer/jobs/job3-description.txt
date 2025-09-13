@@ -1,0 +1,38 @@
+<h3>Company Description</h3>
+<p>Energy Safe Victoria ensures Victorians use energy safely and confidently. Through education, regulation, and enforcement, we prioritise energy safety, supply, and efficiency. Our people come from diverse professions and bring skills and experience that drive the success of Energy Safe Victoria.</p>
+
+<h3>Job Description</h3>
+<p><em>Design user-centred digital experiences that improve public safety and engagement with Energy Safe Victoria's platforms and services.</em></p>
+<p>We are seeking a UX/UI Designer to join our Strategic Communications department. You will support the delivery of intuitive, accessible, and compliant digital experiences for both the energy industry and the public.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+<li>Develop and maintain Energy Safe's design system.</li>
+<li>Conduct user research, create personas, and map user journeys to inform design decisions.</li>
+<li>Create wireframes and UI designs that follow accessibility standards and responsive design principles.</li>
+<li>Collaborate with content, design, and development teams to implement effective user experiences.</li>
+<li>Assist in information architecture review and uplift of multiple digital platforms.</li>
+<li>Apply evidence-based, user-centred design to continually improve digital experiences.</li>
+<li>Maintain awareness of emerging design trends, tools, and technologies.</li>
+<li>Ensure all design outputs align with Energy Safe's brand, strategic objectives, and governance frameworks.</li>
+<li>Assist with general CMS duties as required.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+<li>3-5+ years' experience in UX/UI or experience design roles.</li>
+<li>Strong Figma and Creative Cloud skills, with adaptability to new design tools.</li>
+<li>Ability to translate complex requirements into intuitive experiences.</li>
+<li>Experience with CMS platforms and web design best practices.</li>
+<li>Ability to work independently, manage priorities, and self-motivate.</li>
+<li>Strong collaboration, negotiation, and stakeholder engagement skills.</li>
+<li>Advanced written, verbal, and interpersonal communication skills.</li>
+<li>Tertiary qualifications in UX Design, Psychology, or equivalent experience.</li>
+<li>Portfolio of relevant UX/UI design work.</li>
+<li>Experience in government, regulatory environments, or Human-Centred Design practices (desired).</li>
+</ul>
+
+<h4>Additional Information</h4>
+<p>This role contributes to the design and delivery of user-centred solutions that improve engagement and public safety outcomes. Energy Safe Victoria values diversity and inclusion, and reasonable adjustments will be provided where required.</p>
+<p>Applications close at midnight Sunday, 7 September 2025. Early applications are encouraged.</p>
+<p>For inquiries, contact Human Resources at <a href="mailto:humanresources@energysafe.vic.gov.au">humanresources@energysafe.vic.gov.au</a>.</p>

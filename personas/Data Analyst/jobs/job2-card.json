@@ -1,0 +1,17 @@
+{
+    "id": "2",
+    "title": "Graduate Data Engineer",
+    "company": "Jacobi",
+    "tag": "",
+    "location": "Brisbane QLD",
+    "benefits": "Competitive salary with equity and bonus potential; Flexible hybrid work arrangements; Great personal growth and development; Supportive team-based environment",
+    "summary": [
+        "Join Jacobi’s global team delivering an industry-disrupting SaaS platform for portfolio design and analytics.",
+        "Work on ETL pipelines, client-specific solutions, and real-time data management with Python, SQL, and open source tools.",
+        "Collaborate with colleagues across Brisbane, Sydney, London, and San Francisco.",
+        "Contribute to innovative solutions for investment management teams and their clients."
+    ],
+    "salary": "$150k–$170k",
+    "posted": "",
+    "logo": "logos/Jacobi_logo.png"
+}

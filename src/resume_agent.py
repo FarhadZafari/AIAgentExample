@@ -65,6 +65,7 @@ class ResumeTailorAgent:
     """
     Encapsulates LangGraph construction, tools, and execution for the resume-tailoring agent.
     """
+    JOBS = {}
 
     def __init__(
         self,
@@ -295,7 +296,6 @@ class ResumeTailorAgent:
 # -----------------------------
 
 if __name__ == "__main__":
-
     agent = ResumeTailorAgent()
 
     initial: AgentState = {

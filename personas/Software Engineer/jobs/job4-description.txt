@@ -1,0 +1,40 @@
+<h3>Company Description</h3>
+<p>Mainpac, established in 1984, is an Australian software vendor providing enterprise asset management (EAM) solutions across Australia and 23 international markets. We serve asset-intensive industries including manufacturing, mining, ports, utilities, government, and facilities management. As a 100% subsidiary of Constellation Software Inc. via Vela APX, we benefit from strong corporate support and international expertise.</p>
+<p>Mainpac offers on-premise and on-demand EAM solutions complemented by consulting, implementation, training, and support services.</p>
+
+<h3>Job Description</h3>
+<p><em>Launch your software development career with a supportive and innovative team at Mainpac.</em></p>
+<p>We are seeking a motivated Graduate Software Developer to join our Melbourne-based team. You will work closely with experienced developers to design, develop, and support high-quality products, gaining hands-on experience across our application platform.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+<li>Convert designs and specifications into functional software using defined development methodologies.</li>
+<li>Analyze existing code to identify and resolve defects.</li>
+<li>Test programs and correct errors detected.</li>
+<li>Provide technical assistance to team members and other departments.</li>
+<li>Maintain knowledge of applications, industry trends, and IT best practices.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+<li>Bachelor’s degree in Computer Science, Information Technology, or related field.</li>
+<li>Sound understanding of programming principles and development methodologies.</li>
+<li>Proficiency in C#; experience with JavaScript, HTML5, and CSS3 is highly desirable.</li>
+<li>Knowledge of MS SQL Server and database principles.</li>
+<li>Understanding of distributed (n-tier) system architecture.</li>
+<li>Strong analytical, problem-solving, and teamwork skills.</li>
+<li>Passion for learning and professional growth.</li>
+<li>Recent graduates with 0-2 years’ experience, demonstrated through coursework, internships, or personal projects.</li>
+</ul>
+
+<h4>Why Join Mainpac?</h4>
+<ul>
+<li>Supportive and close-knit team environment.</li>
+<li>Opportunities for technical training and career development.</li>
+<li>Exposure to enterprise asset management software and consulting projects.</li>
+<li>Hands-on experience in software development and quality assurance.</li>
+<li>Equal opportunity employer with a commitment to diversity and inclusion.</li>
+</ul>
+
+<h4>Additional Information</h4>
+<p>Candidates must have permanent work rights in Australia or be eligible for a relevant graduate visa. Shortlisted candidates may be required to complete a technical assessment and coding exercise.</p>

@@ -1,0 +1,55 @@
+<h3>Company Description</h3>
+<p>The Victorian Electoral Commission (VEC) is committed to enabling all Victorians to actively participate in their democracy. We conduct state and local council elections and promote public awareness and understanding of electoral issues in the Victorian community. Our mission is to be change-ready and responsive to legislative changes and community expectations in a dynamic and complex operating environment.</p>
+<p>At the VEC, we provide a values-driven workplace culture, with a passion for excellence, innovation, and professional development. Employees are encouraged to broaden their experience through internal working groups and committees across VEC branches.</p>
+
+<h3>Job Description</h3>
+<p><em>Transform data into insights. Support regulatory compliance. Enhance democratic participation.</em></p>
+<p>We are seeking a skilled Data Analyst to join our Data and Insights team. In this role, you will analyse data to inform regulatory priorities, develop dashboards and reporting tools, and support data governance practices that underpin the VEC’s operations. This role offers the opportunity to directly contribute to the integrity and transparency of Victoria’s electoral system.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+    <li>Develop and implement plans to monitor compliance of regulated entities using data and analytics.</li>
+    <li>Design dashboards and reporting tools to track compliance trends.</li>
+    <li>Analyse large datasets to generate insights that inform annual and election regulatory priorities.</li>
+    <li>Support administration of the VEC’s online disclosure system and maintain strong data governance practices.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+    <li>Demonstrated experience in data analysis and reporting, with proficiency in Power BI and SQL.</li>
+    <li>Strong analytical skills, with the ability to evaluate complex data and identify patterns and insights.</li>
+    <li>Ability to build effective working relationships and communicate findings clearly and persuasively.</li>
+    <li>Qualifications or equivalent professional experience in data analytics or a related field.</li>
+    <li>Commitment to the VEC’s core values.</li>
+</ul>
+
+<h4>Qualifications & Experience</h4>
+<ul>
+    <li>Proven experience in data analytics, reporting, or business intelligence.</li>
+    <li>Demonstrated ability to analyse complex datasets and present actionable insights.</li>
+    <li>Experience in designing dashboards and reporting tools for strategic decision-making.</li>
+</ul>
+
+<h3>Why Join the VEC?</h3>
+<ul>
+    <li>Work in a supportive, inclusive, and high-performing culture.</li>
+    <li>Hybrid working arrangements available to suit your lifestyle.</li>
+    <li>Opportunities for professional growth, training, and development.</li>
+    <li>Make a meaningful contribution to the democratic process in Victoria.</li>
+</ul>
+
+<h3>Additional Information</h3>
+<p>This role offers:</p>
+<ul>
+    <li>Full-time, ongoing employment.</li>
+    <li>VPS Grade 4 salary ($97,955 - $111,142, plus superannuation).</li>
+    <li>Supportive and inclusive workplace culture.</li>
+    <li>Pre-employment screening including character clearance, Nationally Coordinated Criminal History Check (NCCHC), and Working with Children Check.</li>
+    <li>Consideration of political activities disclosure in accordance with Section 17A of the Electoral Act 2002.</li>
+</ul>
+
+<h3>Enquire / Apply</h3>
+<p>All applicants must submit a current CV and a separate document addressing Key Selection Criteria (KSC) 6.1, 6.2, 6.3, and 6.5 as listed in the position description. Applications should be lodged online via the Victorian Government Careers website.</p>
+<p>Applications close at 11:59pm on 31 August 2025.</p>
+<p>We highly encourage Aboriginal and Torres Strait Islander people, people with disabilities, and culturally and linguistically diverse people to apply. We are committed to diversity and inclusion, and can provide adjustments during recruitment or in the workplace as required. For requests, contact <a href="mailto:PeopleMailbox@vec.vic.gov.au">PeopleMailbox@vec.vic.gov.au</a>.</p>
+<p>For further information, contact John Grivas at <a href="mailto:John.Grivas@vec.vic.gov.au">John.Grivas@vec.vic.gov.au</a>.</p>

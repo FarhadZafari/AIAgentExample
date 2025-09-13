@@ -1,0 +1,42 @@
+<h3>Company Description</h3>
+<p>Origin Energy is one of Australia's leading energy companies, powering homes, businesses, and communities while driving the nation's energy transition. We are committed to innovation, sustainability, and delivering exceptional service to our customers.</p>
+<p>At Origin, being useful is more than a tagline – it’s our approach to work every day. We thrive on collaboration, taking ownership, and making a real impact across diverse teams and projects.</p>
+
+<h3>Job Description</h3>
+<p><em>Join Origin Energy as a Software Engineer and contribute to building and maintaining critical systems that power commercial customers and support Australia’s transition to renewable energy.</em></p>
+<p>We are seeking a motivated Software Engineer to join our Melbourne-based team. You’ll work in an Agile environment, delivering high-quality solutions, developing and maintaining IT systems, and collaborating across teams to ensure seamless system integrations.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+<li>Develop, enhance, and maintain IT systems, including CRM and billing platforms, ensuring continuity for commercial customers.</li>
+<li>Deliver new features and solutions using Java (Spring, Hibernate, Maven), React, Python, MongoDB, and MS SQL.</li>
+<li>Support day-to-day IT operations, incident management, and system maintenance.</li>
+<li>Collaborate with teams to integrate systems and deliver positive customer outcomes.</li>
+<li>Participate in after-hours support roster as Incident Manager, monitoring major incidents.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+<li>Experience in software development within Agile/sprint-based teams.</li>
+<li>Strong skills in Java (Spring, Hibernate, Maven) and React front-end development.</li>
+<li>Proficiency with Python and databases (MS SQL, MongoDB).</li>
+<li>Experience using Jira, Git, Docker, and CI/CD tools.</li>
+<li>Familiarity with ITIL or similar frameworks and incident management.</li>
+<li>Proactive problem-solving and strong communication skills.</li>
+<li>Willingness to participate in occasional after-hours support.</li>
+</ul>
+
+<h4>Why Join Origin?</h4>
+<ul>
+<li>Generous employee share and bonus plans.</li>
+<li>Growth paths across a large, diverse environment.</li>
+<li>Central Melbourne CBD location with excellent transport and parking.</li>
+<li>Employee discounts on electricity, gas, internet, and EV subscriptions.</li>
+<li>Learning support and community programs through the Origin Foundation.</li>
+<li>20 weeks paid leave for primary carers and flexible return options.</li>
+<li>Option to purchase up to four additional weeks of leave annually.</li>
+<li>Inclusive, diverse, and purpose-driven workplace committed to net-zero and sustainability.</li>
+</ul>
+
+<h4>Enquire / Apply</h4>
+<p>Ready to make an impact? Apply now and join a team that powers Australia’s future. Background checks may be required during recruitment and employment. Origin welcomes applications from diverse backgrounds, including Aboriginal and Torres Strait Islander Peoples.</p>

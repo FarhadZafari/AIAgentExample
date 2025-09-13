@@ -1,0 +1,51 @@
+<h3>Company Description</h3>
+<p>The City of Port Phillip is an inner-city council with around 1000 employees delivering more than 100 programs and services to residents, businesses, and visitors. These range from childcare and immunisations, to libraries, management of parks and open spaces, rubbish collection, road maintenance, and more. The City of Port Phillip has zero tolerance for child abuse and is a committed Child Safe organisation.</p>
+
+<h3>Job Description</h3>
+<p><em>Transform data into actionable insights. Support strategic decision-making. Drive impact.</em></p>
+<p>We are seeking a skilled Data Analyst to join our dynamic team. In this role, you’ll help shape data-informed decision-making across the organisation by developing dashboards, ensuring data integrity, and delivering actionable insights to stakeholders. You’ll work with advanced tools like Power BI, R, and Python while collaborating across departments to support strategic projects and initiatives.</p>
+
+<h4>Key Responsibilities</h4>
+<ul>
+    <li>Collaborate with stakeholders to gather and define reporting and data requirements.</li>
+    <li>Design and maintain dashboards and reports using Power BI and ERP tools.</li>
+    <li>Analyse data using Python and R for deeper insights and automation.</li>
+    <li>Cleanse and manage data to ensure accuracy, consistency, and security.</li>
+    <li>Support testing activities and maintain documentation for ongoing improvements.</li>
+</ul>
+
+<h4>To Be Successful in this Role</h4>
+<ul>
+    <li>Proven experience developing end-to-end BI solutions and reports.</li>
+    <li>Proficient in Power BI, DAX, R, and Python for data analysis and modelling.</li>
+    <li>Strong problem-solving skills with the ability to manage large, complex datasets.</li>
+    <li>Knowledge of data governance and ITIL tools like ServiceNOW.</li>
+    <li>Experience with TechnologyOne ERP systems and Azure cloud platforms is favourable.</li>
+</ul>
+
+<h3>Culture</h3>
+<p>People enjoy working at the City of Port Phillip because we are a welcoming, healthy, and inclusive workplace. We offer a vibrant and diverse work environment where employees can develop professionally and personally while delivering a wide range of services to the community.</p>
+
+<h3>Benefits</h3>
+<ul>
+    <li>Flexible working arrangements to suit your style and needs.</li>
+    <li>Supportive leadership team with a strong community focus.</li>
+    <li>Training and development opportunities, study assistance, and professional growth.</li>
+    <li>Paid parental leave and access to health and wellbeing programs, including gyms and pools.</li>
+    <li>Active social club and Employee Assistance Program (EAP) for personal support.</li>
+</ul>
+
+<h3>Additional Information</h3>
+<p>Pre-employment screening will apply to all appointments. Prior to a formal offer, applicants will be asked to provide:</p>
+<ul>
+    <li>Evidence of mandatory qualifications, registrations, or licences.</li>
+    <li>Proof of right to work in Australia and identity verification.</li>
+    <li>National Police Check via City of Port Phillip’s provider.</li>
+    <li>Working with Children Check (employee type registered with City of Port Phillip).</li>
+</ul>
+
+<h3>Enquire / Apply</h3>
+<p>Click APPLY to submit your application. All applicants must provide a Resume and a Cover Letter addressing the Key Selection Criteria. The Cover Letter should be no longer than 2 pages and include each heading in the Key Selection Criteria.</p>
+<p>Applications close 11.59pm Sunday 31 August 2025.</p>
+<p>For further information, contact Mohsen Amerion, Team Lead Data, via <a href="mailto:Mohsen.Amerion@portphillip.vic.gov.au">Mohsen.Amerion@portphillip.vic.gov.au</a>.</p>
+<p>The City of Port Phillip is an equal opportunity employer committed to diversity and inclusion. We actively encourage candidates from culturally and linguistically diverse backgrounds, First Nation and Torres Strait Islander candidates, members of the LGBTQIA+ community, and candidates with a disability. If you have accessibility requirements or need adjustments to participate in the recruitment process, please contact Yass Mustafa at 0468 576 806 or <a href="mailto:recruitment@portphillip.vic.gov.au">recruitment@portphillip.vic.gov.au</a>.</p>
