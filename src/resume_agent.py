@@ -60,6 +60,10 @@ class ClarifyDecision(BaseModel):
         description="The single most important question to ask if clarification is needed."
     )
 
+class ClarificationNeeded(Exception):
+    def __init__(self, question: str):
+        self.question = question
+        super().__init__(question)
 
 # -----------------------------
 # Agent Class
@@ -151,19 +155,30 @@ class ResumeTailorAgent:
             return self.Resume_store.data.get(candidate_id, "")
         return _fetch_resume
 
+    # def _make_ask_candidate_tool(self) -> Tool:
+    #     @tool("ask_candidate")
+    #     def _ask_candidate(question: str) -> str:
+    #         """
+    #         Ask the candidate a clarifying question.
+    #         This implementation pauses and waits for the candidate to type their answer.
+    #         Swap this out to send via email/Slack/UI and return the real reply.
+    #         """
+    #         print(f"\n--- Clarifying Question ---\n{question}")
+    #         answer = input("Your answer: ")
+    #         return answer.strip()
+    #     return _ask_candidate
+
+
     def _make_ask_candidate_tool(self) -> Tool:
         @tool("ask_candidate")
         def _ask_candidate(question: str) -> str:
             """
             Ask the candidate a clarifying question.
-            This implementation pauses and waits for the candidate to type their answer.
-            Swap this out to send via email/Slack/UI and return the real reply.
+            In API mode, raise ClarificationNeeded so the Flask route can handle it.
             """
-            print(f"\n--- Clarifying Question ---\n{question}")
-            answer = input("Your answer: ")
-            return answer.strip()
-        return _ask_candidate
+            raise ClarificationNeeded(question)
 
+        return _ask_candidate
     def _make_save_resume_tool(self) -> Tool:
         @tool("save_tailored_resume")
         def _save_tailored_resume(filename: str, content: str, directory: str | None = None) -> str:
@@ -259,14 +274,51 @@ class ResumeTailorAgent:
     def _node_tailor(self, state: AgentState) -> AgentState:
         system = SystemMessage(content=(
             "You tailor resumes for specific jobs. Preserve truthful content, amplify relevant experience, "
-            "and trim unrelated material. Keep it concise, ATS-friendly, and easy to scan. "
-            "Use Markdown (no code fences)."
+            "and trim unrelated material. Keep it concise, ATS-friendly, and easy to scan.\n\n"
+            "OUTPUT FORMAT (strict):\n"
+            "- Use Markdown with minimal inline HTML allowed (<hr>, <br>, <small>). Do NOT use code fences.\n"
+            "- Start with a clean name/contact header, then SUMMARY, SKILLS, EXPERIENCE, PROJECTS (optional), EDUCATION, CERTIFICATIONS (optional).\n"
+            "- Keep total length ~500–700 words to fit neatly on one page when converted to PDF.\n"
+            "- Use short, impact-focused bullets (start with a strong verb; include metrics where truthful).\n"
+            "- Avoid tables, images, or wide layouts. No multi-column.\n"
+            "- Use bold for company and role, italic for dates/location. Keep consistent.\n"
+            "- Use an <hr> between major sections for print clarity. You may use <small> for secondary info.\n"
+            "- If content risks spilling to a second page, prioritize relevance to the job and cut low-value details.\n\n"
+            "HEADER TEMPLATE (fill with candidate info if available from resume or clarifications):\n"
+            "# CANDIDATE NAME\n"
+            "<small>City, Country · Email · Phone · LinkedIn/GitHub</small>\n"
+            "<hr>\n\n"
+            "SECTION TEMPLATES:\n"
+            "## SUMMARY\n"
+            "1–3 lines tailored to the job’s keywords (skills, domain, impact). Avoid buzzword salad.\n\n"
+            "## SKILLS\n"
+            "- Languages/Frameworks: …\n"
+            "- Data/ML: …\n"
+            "- Cloud/Infra: …\n"
+            "- Other: …\n\n"
+            "## EXPERIENCE\n"
+            "**Company — Role**  *Dates · Location*\n"
+            "- Result-first bullet with metric (what → how → impact).\n"
+            "- Another targeted bullet aligned with job requirements (e.g., LTR, bandits, A/B testing).\n"
+            "- Keep 3–5 bullets per role.\n\n"
+            "## PROJECTS (optional if adds value)\n"
+            "**Project Name** — brief, measurable outcome; tech stack.\n\n"
+            "## EDUCATION\n"
+            "**Degree**, Institution — Year (optional GPA/awards if strong).\n\n"
+            "## CERTIFICATIONS (optional)\n"
+            "- Name — Issuer (Year)\n\n"
+            "STYLE GUARDRAILS:\n"
+            "- Prefer digits for numbers (e.g., 15%, 10M users).\n"
+            "- No personal pronouns; no full sentences in SKILLS.\n"
+            "- No excessive italics/bold beyond structure above.\n"
+            "- No hyperlinks with long URLs; show display names only.\n"
+            "- No placeholders left unresolved.\n"
         ))
         clar = state.get("clarification_response") or ""
         human = HumanMessage(content=(
             f"JOB:\n{state.get('job_text')}\n\nRESUME (ORIGINAL):\n{state.get('resume_text')}\n\n"
             f"CANDIDATE CLARIFICATIONS (if any): {clar}\n\n"
-            "Produce a tailored resume suitable for this job."
+            "Produce the tailored resume now, following the exact format and guardrails above."
         ))
         tailored = self.llm.invoke([system, human]).content
         return {"tailored_resume": tailored, "messages": [AIMessage(content="Tailored resume created.")]}

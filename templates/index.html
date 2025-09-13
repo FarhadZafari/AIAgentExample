@@ -94,6 +94,17 @@
     </aside>
   </main>
 
+  <!-- the module to receive users response for clarifying question -->
+  <div id="clarify-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:1000; align-items:center; justify-content:center;">
+    <div style="background:#fff; padding:2em; border-radius:8px; max-width:400px; margin:auto;">
+      <p id="clarify-question"></p>
+      <textarea id="clarify-answer" rows="3" style="width:100%;"></textarea>
+      <div style="margin-top:1em; text-align:right;">
+        <button id="clarify-submit">Submit</button>
+      </div>
+    </div>
+  </div>
+
   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

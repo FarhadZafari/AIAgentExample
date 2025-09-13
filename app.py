@@ -1,10 +1,10 @@
 # app.py
-from flask import Flask, request, Response, render_template, abort
+from flask import Flask, request, Response, render_template, abort, send_from_directory
 from html import escape
 from markupsafe import Markup
 from src.utils import load_jobs_from_persona_folder
-from src.resume_agent import ResumeTailorAgent, AgentState, JobStore, ResumeStore
-
+from src.resume_agent import ResumeTailorAgent, AgentState, JobStore, ResumeStore, ClarificationNeeded
+import json, os
 
 class API:
     # ---- Mock store (replace with your real data layer) ----
@@ -346,6 +346,8 @@ class API:
         app.add_url_rule("/api/seek", view_func=self.seek, methods=["POST"])
         app.add_url_rule("/api/tailor-cv", view_func=self.tailor_cv, methods=["POST"])
         app.add_url_rule("/api/job/<job_id>", view_func=self.job_detail, methods=["GET"])
+        app.add_url_rule('/personas/<persona>/<filename>', view_func=self.serve_pdf, methods=["GET"])
+        app.add_url_rule("/api/clarify-cv", view_func=self.clarify_cv, methods=["POST"])
 
     def _meta_line(self, job: dict) -> str:
         bits = [job.get("location") or "", job.get("type") or "", job.get("salary") or ""]
@@ -402,6 +404,8 @@ class API:
         </div>
         """
 
+    def serve_pdf(self, persona, filename):
+        return send_from_directory(f'personas/{persona}', filename)
     def index(self):
         return render_template("index.html")
 
@@ -421,6 +425,54 @@ class API:
         html = self.render_job_cards(jobs)
         return Response(html, mimetype="text/html")
 
+    # def tailor_cv(self):
+    #     data = request.get_json(silent=True) or {}
+    #     print("Tailor CV payload:", data)
+    #
+    #     job_id = data["job_id"]
+    #     message = f"CV tailoring for job {job_id} endpoint hit successfully!"
+    #     initial: AgentState = {
+    #         "job_id": job_id,
+    #         "candidate_id": "cand-999",
+    #         "messages": []
+    #     }
+    #     thread_id = "cand-999__job-123"
+    #
+    #     print("------->", self.Resume)
+    #     self.agent.JobStore = JobStore(self.Jobs)
+    #     self.agent.Resume_store = ResumeStore({"cand-999": self.Resume})
+    #     # Single-shot run (will ask on console if needed)
+    #     final_state = self.agent.run(initial, thread_id)
+    #
+    #     print("\n---- FINAL KEYS ----")
+    #     print(list(final_state.keys()))
+    #     print("\n---- LOG (last few) ----")
+    #     for m in final_state.get("messages", [])[-4:]:
+    #         print(f"- {getattr(m, 'content', '')}")
+    #
+    #     print("\n---- TAILORED RESUME PREVIEW ----")
+    #     print((final_state.get("tailored_resume") or ""))
+    #     tailored_resume = final_state.get("tailored_resume") or ""
+    #     success = False
+    #     if tailored_resume and self.Persona_path:
+    #         from src.utils import save_resume_as_pdf
+    #         success = save_resume_as_pdf(tailored_resume, self.Persona_path, job_id)
+    #     if success:
+    #         pdf_url = f"/personas/{os.path.basename(self.Persona_path)}/updated_resume_job{job_id}.pdf"
+    #         return Response(
+    #             json.dumps({"message": message, "pdf_url": pdf_url}),
+    #             mimetype="application/json"
+    #         )
+    #     else:
+    #         return Response(
+    #             json.dumps({"message": message}),
+    #             mimetype="application/json"
+    #         )        # For now just return a simple text response
+    #     return Response(
+    #         f"<p style='color:#166534'>{message}</p>",
+    #         mimetype="text/html"
+    #     )
+
     def tailor_cv(self):
         data = request.get_json(silent=True) or {}
         print("Tailor CV payload:", data)
@@ -437,8 +489,16 @@ class API:
         print("------->", self.Resume)
         self.agent.JobStore = JobStore(self.Jobs)
         self.agent.Resume_store = ResumeStore({"cand-999": self.Resume})
-        # Single-shot run (will ask on console if needed)
-        final_state = self.agent.run(initial, thread_id)
+
+        try:
+            final_state = self.agent.run(initial, thread_id)
+        except ClarificationNeeded as e:
+            # Return clarification question to frontend
+            print("===============>>>>>>>>>>>> Clarification needed:", str(e))
+            return Response(
+                json.dumps({"clarification_needed": True, "question": str(e)}),
+                mimetype="application/json"
+            )
 
         print("\n---- FINAL KEYS ----")
         print(list(final_state.keys()))
@@ -454,14 +514,16 @@ class API:
             from src.utils import save_resume_as_pdf
             success = save_resume_as_pdf(tailored_resume, self.Persona_path, job_id)
         if success:
-            message += f" Tailored resume saved to {self.Persona_path}."
+            pdf_url = f"/personas/{os.path.basename(self.Persona_path)}/updated_resume_job{job_id}.pdf"
+            return Response(
+                json.dumps({"message": message, "pdf_url": pdf_url}),
+                mimetype="application/json"
+            )
         else:
-            message += " No tailored resume generated."
-        # For now just return a simple text response
-        return Response(
-            f"<p style='color:#166534'>{message}</p>",
-            mimetype="text/html"
-        )
+            return Response(
+                json.dumps({"message": message}),
+                mimetype="application/json"
+            )
 
     def job_detail(self, job_id: str):
         print("-----------> Job detail request for ID:", job_id)
@@ -471,6 +533,56 @@ class API:
             abort(404)
         html = self.render_detail_panel(job)
         return Response(html, mimetype="text/html")
+
+    def clarify_cv(self):
+        print("-------------->>>>>>>>>>>>>>>>>>>>>>>> Clarify CV endpoint hit")
+        data = request.get_json(silent=True) or {}
+        job_id = data.get("job_id")
+        answer = data.get("answer", "").strip()
+        print("++++++++++++++++++++++++++++++++++++++ Clarify answer from the user:", answer)
+        if not job_id or not answer:
+            return Response(
+                json.dumps({"message": "Missing job_id or answer."}),
+                mimetype="application/json",
+                status=400
+            )
+
+        # Reconstruct agent state as needed
+        initial = {
+            "job_id": job_id,
+            "candidate_id": "cand-999",
+            "messages": [{"role": "candidate", "content": answer}]
+        }
+        thread_id = "cand-999__job-123"
+
+        # Set up stores as before
+        self.agent.JobStore = JobStore(self.Jobs)
+        self.agent.Resume_store = ResumeStore({"cand-999": self.Resume})
+
+        try:
+            final_state = self.agent.run(initial, thread_id)
+        except ClarificationNeeded as e:
+            return Response(
+                json.dumps({"clarification_needed": True, "question": str(e)}),
+                mimetype="application/json"
+            )
+
+        tailored_resume = final_state.get("tailored_resume") or ""
+        success = False
+        if tailored_resume and self.Persona_path:
+            from src.utils import save_resume_as_pdf
+            success = save_resume_as_pdf(tailored_resume, self.Persona_path, job_id)
+        if success:
+            pdf_url = f"/personas/{os.path.basename(self.Persona_path)}/updated_resume_job{job_id}.pdf"
+            return Response(
+                json.dumps({"message": "CV tailored successfully!", "pdf_url": pdf_url}),
+                mimetype="application/json"
+            )
+        else:
+            return Response(
+                json.dumps({"message": "CV tailored, but PDF not generated."}),
+                mimetype="application/json"
+            )
 
 app = Flask(__name__)
 api = API(app)
