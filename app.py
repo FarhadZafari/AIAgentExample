@@ -3,9 +3,10 @@ from flask import Flask, request, Response, render_template, abort
 from html import escape
 from markupsafe import Markup
 from src.utils import load_jobs_from_persona_folder
+from src.resume_agent import ResumeTailorAgent, AgentState, JobStore, ResumeStore
+
 
 class API:
-    JOBS = {}
     # ---- Mock store (replace with your real data layer) ----
     # JOBS = {
     #     "1": {
@@ -333,6 +334,12 @@ class API:
     def __init__(self, app: Flask):
         self.app = app
         self.register_routes(app)
+        import os
+        os.environ["OPEN_AI_API_KEY"] = ""
+        self.agent = ResumeTailorAgent()
+        self.Jobs = None
+        self.Resume = None
+        self.Persona_path = None
 
     def register_routes(self, app):
         app.add_url_rule("/", view_func=self.index)
@@ -406,8 +413,11 @@ class API:
         jobs = []
         if keywords:
             # Use the first keyword as the persona folder name
-            jobs = load_jobs_from_persona_folder(keywords)
-            self.JOBS = {job["id"]: job for job in jobs}
+            jobs, resume, persona_path = load_jobs_from_persona_folder(keywords)
+            print("---------->>>>>>>>", jobs, persona_path)
+            self.Jobs = {job["id"]: job for job in jobs}
+            self.Resume = resume
+            self.Persona_path = persona_path
         html = self.render_job_cards(jobs)
         return Response(html, mimetype="text/html")
 
@@ -415,16 +425,48 @@ class API:
         data = request.get_json(silent=True) or {}
         print("Tailor CV payload:", data)
 
+        job_id = data["job_id"]
+        message = f"CV tailoring for job {job_id} endpoint hit successfully!"
+        initial: AgentState = {
+            "job_id": job_id,
+            "candidate_id": "cand-999",
+            "messages": []
+        }
+        thread_id = "cand-999__job-123"
+
+        print("------->", self.Resume)
+        self.agent.JobStore = JobStore(self.Jobs)
+        self.agent.Resume_store = ResumeStore({"cand-999": self.Resume})
+        # Single-shot run (will ask on console if needed)
+        final_state = self.agent.run(initial, thread_id)
+
+        print("\n---- FINAL KEYS ----")
+        print(list(final_state.keys()))
+        print("\n---- LOG (last few) ----")
+        for m in final_state.get("messages", [])[-4:]:
+            print(f"- {getattr(m, 'content', '')}")
+
+        print("\n---- TAILORED RESUME PREVIEW ----")
+        print((final_state.get("tailored_resume") or ""))
+        tailored_resume = final_state.get("tailored_resume") or ""
+        success = False
+        if tailored_resume and self.Persona_path:
+            from src.utils import save_resume_as_pdf
+            success = save_resume_as_pdf(tailored_resume, self.Persona_path, job_id)
+        if success:
+            message += f" Tailored resume saved to {self.Persona_path}."
+        else:
+            message += " No tailored resume generated."
         # For now just return a simple text response
         return Response(
-            "<p style='color:#166534'>CV tailoring endpoint hit successfully!</p>",
+            f"<p style='color:#166534'>{message}</p>",
             mimetype="text/html"
         )
 
     def job_detail(self, job_id: str):
         print("-----------> Job detail request for ID:", job_id)
-        print(self.JOBS)
-        job = self.JOBS.get(job_id)
+        print(self.Jobs)
+        job = self.Jobs.get(job_id)
         if not job:
             abort(404)
         html = self.render_detail_panel(job)

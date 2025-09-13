@@ -36,11 +36,15 @@ class AgentState(TypedDict):
 @dataclass
 class JobStore:
     data: dict
+    def __init__(self, data: dict | None = None):
+        self.data = data or {}
 
 
 @dataclass
 class ResumeStore:
     data: dict
+    def __init__(self, data: dict | None = None):
+        self.data = data or {}
 
 
 # -----------------------------
@@ -65,7 +69,6 @@ class ResumeTailorAgent:
     """
     Encapsulates LangGraph construction, tools, and execution for the resume-tailoring agent.
     """
-    JOBS = {}
 
     def __init__(
         self,
@@ -76,7 +79,7 @@ class ResumeTailorAgent:
         checkpointer: MemorySaver | None = None,
     ) -> None:
         # Dependencies (DI-friendly)
-        self.job_store = job_store or JobStore(
+        self.Job_store = job_store or JobStore(
             data={
                 "job-123": (
                     "Data Scientist at ExampleCo. Responsibilities: build LTR models; "
@@ -84,7 +87,7 @@ class ResumeTailorAgent:
                 )
             }
         )
-        self.resume_store = resume_store or ResumeStore(
+        self.Resume_store = resume_store or ResumeStore(
             data={
                 "cand-999": (
                     "Farhad Zafari — ML/DS. Skills: Python, PySpark, Databricks, AWS, "
@@ -138,14 +141,14 @@ class ResumeTailorAgent:
         @tool("fetch_job")
         def _fetch_job(job_id: str) -> str:
             """Fetch full job posting text by job_id."""
-            return self.job_store.data.get(job_id, "")
+            return self.Job_store.data.get(job_id, "")
         return _fetch_job
 
     def _make_fetch_resume_tool(self) -> Tool:
         @tool("fetch_resume")
         def _fetch_resume(candidate_id: str) -> str:
             """Fetch candidate resume text by candidate_id."""
-            return self.resume_store.data.get(candidate_id, "")
+            return self.Resume_store.data.get(candidate_id, "")
         return _fetch_resume
 
     def _make_ask_candidate_tool(self) -> Tool:

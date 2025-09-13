@@ -14,3 +14,6 @@ gunicorn==22.0.0
 Flask-Cors==4.0.0
 langgraph
 langchain_openai
+PyPDF2
+reportlab
+canvas
