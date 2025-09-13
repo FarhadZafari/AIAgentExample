@@ -44,7 +44,7 @@ def load_jobs_from_persona_folder(persona_keyword: str) -> (list[dict], str, str
     print(resume_txt)
     return jobs, resume_txt, persona_dir
 
-def save_resume_as_pdf(tailored_resume: str, persona_dir: str, job_id: str) -> bool
+def save_resume_as_pdf(tailored_resume: str, persona_dir: str, job_id: str) -> bool:
     pdf_filename = f"updated_resume_job{job_id}.pdf"
     pdf_path = os.path.join(persona_dir, pdf_filename)
 
